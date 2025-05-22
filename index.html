@@ -14,119 +14,115 @@
       }
     </style>
   </head>
-  <body class="bg-gray-900 text-white scroll-smooth">
+  <body class="bg-gray-950 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 p-4 shadow-md fixed w-full z-10">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">Ahmed Maher</h1>
+        <div class="space-x-6">
+          <a href="#about" class="hover:text-blue-400">About</a>
+          <a href="#skills" class="hover:text-blue-400">Skills</a>
+          <a href="#experience" class="hover:text-blue-400">Experience</a>
+          <a href="#projects" class="hover:text-blue-400">Projects</a>
+          <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col items-center justify-center text-center px-4">
-      <h1 class="text-4xl md:text-6xl font-extrabold">Ahmed Maher</h1>
-      <p class="text-lg md:text-2xl mt-4">Flutter Developer | UI/UX Designer | Backend Integrator</p>
-      <div class="mt-6 space-x-4">
-        <a href="mailto:ahmedofficial5036@gmail.com" class="text-blue-400 hover:underline">Email</a>
-        <a href="https://linkedin.com/in/ahmed-maher-221831222/" class="text-blue-400 hover:underline" target="_blank">LinkedIn</a>
-        <a href="https://github.com/ahmed-5036" class="text-blue-400 hover:underline" target="_blank">GitHub</a>
-        <a href="Resume_Ahmed_Maher.pdf" download class="text-blue-400 hover:underline">Download CV</a>
+    <section class="h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 text-center px-4 pt-16">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Ahmed Maher</h1>
+        <p class="text-lg md:text-2xl text-gray-300">Flutter Developer & UI/UX Designer</p>
+        <div class="mt-6 space-x-4">
+          <a href="mailto:ahmedofficial5036@gmail.com" class="text-blue-400 hover:underline">Email</a>
+          <a href="https://linkedin.com/in/ahmed-maher-221831222/" target="_blank" class="text-blue-400 hover:underline">LinkedIn</a>
+          <a href="https://github.com/ahmed-5036" target="_blank" class="text-blue-400 hover:underline">GitHub</a>
+          <a href="Resume_Ahmed_Maher.pdf" download class="text-blue-400 hover:underline">Download CV</a>
+        </div>
       </div>
     </section>
 
     <!-- About Me -->
-    <section class="px-6 py-16 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-lg leading-relaxed">
-        I'm a Flutter Developer with over 2 years of experience building cross-platform mobile apps using Flutter and Dart. I specialize in UI/UX design, state management with Bloc/Provider/Redux/GetX, and backend integrations using Firebase and REST APIs. Passionate about scalable architecture and clean code.
+    <section id="about" class="max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-lg text-gray-300">
+        I'm a Flutter Developer with 2+ years of experience in building cross-platform mobile apps. I focus on performance, clean architecture, and intuitive UI/UX using Flutter, Firebase, and modern design tools. Passionate about scalable systems and seamless user experiences.
       </p>
     </section>
 
     <!-- Skills -->
-    <section class="bg-gray-800 px-6 py-16">
-      <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-        <span>Flutter</span><span>Dart</span><span>Firebase</span>
-        <span>REST APIs</span><span>UI/UX Design</span><span>Figma</span>
-        <span>State Management</span><span>SQLite</span><span>GraphQL</span>
-        <span>JavaScript</span><span>Python</span><span>CI/CD</span>
+    <section id="skills" class="bg-gray-900 py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-gray-300">
+          <div class="bg-gray-800 p-4 rounded-lg">Flutter</div>
+          <div class="bg-gray-800 p-4 rounded-lg">Dart</div>
+          <div class="bg-gray-800 p-4 rounded-lg">Firebase</div>
+          <div class="bg-gray-800 p-4 rounded-lg">REST APIs</div>
+          <div class="bg-gray-800 p-4 rounded-lg">UI/UX Design</div>
+          <div class="bg-gray-800 p-4 rounded-lg">GraphQL</div>
+          <div class="bg-gray-800 p-4 rounded-lg">JavaScript</div>
+          <div class="bg-gray-800 p-4 rounded-lg">Python</div>
+        </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="px-6 py-16 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Experience</h2>
-      <div class="space-y-6">
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-8">Experience</h2>
+      <div class="space-y-8">
         <div>
-          <h3 class="text-xl font-semibold">Flutter Developer - AlphaRalph Hybrid</h3>
+          <h3 class="text-xl font-semibold">Flutter Developer – AlphaRalph Hybrid</h3>
           <p class="text-sm text-gray-400">Nov 2024 – Present</p>
-          <ul class="list-disc ml-5 mt-2 space-y-1">
-            <li>Developed hybrid mobile apps using Flutter with native integrations.</li>
-            <li>Implemented Bloc state management in enterprise apps.</li>
-            <li>Optimized performance, reducing load time by 35%.</li>
+          <ul class="list-disc ml-5 mt-2 text-gray-300 space-y-1">
+            <li>Built hybrid mobile apps with native integrations.</li>
+            <li>Used Bloc for enterprise-level state management.</li>
+            <li>Improved app performance by 35%.</li>
           </ul>
         </div>
         <div>
-          <h3 class="text-xl font-semibold">Flutter Developer - Freelance / E-JUST</h3>
+          <h3 class="text-xl font-semibold">Freelance & E-JUST</h3>
           <p class="text-sm text-gray-400">Jul 2023 – Sep 2024</p>
-          <ul class="list-disc ml-5 mt-2 space-y-1">
-            <li>Built apps with Provider, Redux and Bloc patterns.</li>
-            <li>Integrated Firebase for authentication and database management.</li>
-            <li>Led a team of 4 developers, delivered agile-based features.</li>
+          <ul class="list-disc ml-5 mt-2 text-gray-300 space-y-1">
+            <li>Developed apps using Provider, Redux, and Bloc.</li>
+            <li>Led 4-member dev team with agile delivery.</li>
+            <li>Implemented Firebase Auth with 99.9% uptime.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section class="bg-gray-800 px-6 py-16">
-      <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
-      <div class="space-y-6 max-w-4xl mx-auto">
-        <div>
-          <h3 class="text-xl font-semibold">MediTrack (Ongoing)</h3>
-          <p>Health monitoring app using ML & Firebase with 95% anomaly detection accuracy.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Bus Seat Reservation</h3>
-          <p>Cross-platform app with payment gateway and 200+ active users.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">E-Commerce App</h3>
-          <p>Full-featured e-commerce mobile app with local data caching and REST API integration.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education & Certifications -->
-    <section class="px-6 py-16 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Education & Certifications</h2>
-      <p class="mb-4">B.Sc. in Computer Science & Engineering, E-JUST, 2021 – 2025 (Expected)</p>
-      <ul class="list-disc ml-5 space-y-1">
-        <li>Flutter App Dev – ITI, 2023</li>
-        <li>UI/UX Design – Google Digital Garage, 2023</li>
-        <li>Firebase for Flutter Devs – Google, 2023</li>
-        <li>Agile & Scrum – Coursera, 2024</li>
-        <li>REST API Dev – Pluralsight, 2023</li>
-      </ul>
-    </section>
-
-    <!-- Achievements -->
-    <section class="bg-gray-800 px-6 py-16">
-      <h2 class="text-3xl font-bold mb-6 text-center">Achievements</h2>
-      <div class="space-y-6 max-w-4xl mx-auto">
-        <div>
-          <h3 class="text-xl font-semibold">NURC 2024 – 1st Place</h3>
-          <p>Led Flutter UI for robotics control system with real-time feedback and documentation.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold">Victoria College Science Fair – 1st Place</h3>
-          <p>Developed a marine safety system and presented it to a panel of judges.</p>
+    <section id="projects" class="bg-gray-900 py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+        <div class="grid sm:grid-cols-2 gap-8">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">MediTrack</h3>
+            <p class="text-gray-300">AI-powered health monitoring app using ML and Firebase.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Bus Seat Reservation</h3>
+            <p class="text-gray-300">Cross-platform app with payment integration and 200+ users.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">E-Commerce App</h3>
+            <p class="text-gray-300">Complete shopping app with local caching and API integration.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="px-6 py-16 max-w-2xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-      <p class="mb-6">Want to work together or have a question? Reach out!</p>
-      <a href="mailto:ahmedofficial5036@gmail.com" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Email Me</a>
+    <section id="contact" class="px-6 py-20 max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="mb-4 text-gray-300">Let's connect! Feel free to reach out for work, collaborations, or questions.</p>
+      <a href="mailto:ahmedofficial5036@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded text-white">Say Hello</a>
     </section>
 
     <footer class="text-center py-6 text-sm text-gray-500">
-      &copy; 2025 Ahmed Maher. Built with Tailwind CSS.
+      &copy; 2025 Ahmed Maher — Built with Tailwind CSS
     </footer>
   </body>
 </html>
