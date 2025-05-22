@@ -17,6 +17,18 @@
       line-height: 1.6;
       font-size: 16px;
     }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #f0f0f0;
+        text-decoration: none;
+    }
+
     a {
       color: #007acc;
       text-decoration: none;
@@ -201,9 +213,61 @@
       }
       nav a {
         margin: 0 0.75rem;
-        color: white;
       }
     }
+
+    .contact-form {
+    max-width: 600px;
+    margin: 20px auto 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-group {
+    margin-bottom: 20px;
+    }
+
+    .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    }
+
+    .form-group input,
+    .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+    border-color: #0077ff;
+    outline: none;
+    }
+
+    .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+    background-color: #005bcc;
+    }
+
   </style>
 </head>
 <body>
@@ -222,7 +286,7 @@
 <main>
   <!-- Hero -->
   <section class="hero" id="about">
-    <img src="https://via.placeholder.com/160" alt="Ahmed Maher photo" />
+    <img src="ahmed_maher_wa-removebg-preview(1).png" alt="Ahmed Maher photo" />
     <div class="hero-text">
       <h1>Ahmed Maher</h1>
       <p>Flutter Developer | Mobile App Specialist | UI/UX Enthusiast</p>
@@ -341,12 +405,25 @@
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:ahmedofficial5036@gmail.com">ahmedofficial5036@gmail.com</a></p>
-    <p>Phone: +20 155 213 2919</p>
-    <p>
-      LinkedIn: <a href="https://linkedin.com/in/ahmed-maher-221831222/" target="_blank">linkedin.com/in/ahmed-maher-221831222/</a><br />
-      GitHub: <a href="https://github.com/ahmed-5036" target="_blank">github.com/ahmed-5036</a>
-    </p>
+    <form class="contact-form" action="mailto:ahmedofficial5036@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+
   </section>
 </main>
 
