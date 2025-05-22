@@ -12,18 +12,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
   <!-- Internal CSS -->
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
-    /* Add custom styles here */
+
+    .logo-font {
+  font-family: 'Dancing Script', cursive;
+}
+
   </style>
 
   <!-- Internal JavaScript -->
   <script>
     // Add custom JavaScript here
+    document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+});
+
+    
     document.addEventListener('DOMContentLoaded', () => {
       // Scroll behavior, animations, etc.
     });
@@ -32,6 +47,43 @@
 <body class="bg-gray-950 text-white">
 
   <!-- ========== Navbar ========== -->
+  <nav class="bg-white text-purple-700 shadow-md fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-3xl font-bold logo-font text-pink-600">Ahmed Maher</div>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex space-x-8 text-lg font-medium">
+      <li><a href="#hero" class="hover:text-pink-500 transition duration-300 ease-in-out">Home</a></li>
+      <li><a href="#about" class="hover:text-pink-500 transition duration-300 ease-in-out">About</a></li>
+      <li><a href="#skills" class="hover:text-pink-500 transition duration-300 ease-in-out">Skills</a></li>
+      <li><a href="#projects" class="hover:text-pink-500 transition duration-300 ease-in-out">Projects</a></li>
+      <li><a href="#contact" class="hover:text-pink-500 transition duration-300 ease-in-out">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-purple-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+    <ul class="space-y-4 text-lg font-medium text-purple-700">
+      <li><a href=\"#hero\" class=\"block hover:text-pink-500\">Home</a></li>
+      <li><a href=\"#about\" class=\"block hover:text-pink-500\">About</a></li>
+      <li><a href=\"#skills\" class=\"block hover:text-pink-500\">Skills</a></li>
+      <li><a href=\"#projects\" class=\"block hover:text-pink-500\">Projects</a></li>
+      <li><a href=\"#contact\" class=\"block hover:text-pink-500\">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- ========== Hero Section ========== -->
 
